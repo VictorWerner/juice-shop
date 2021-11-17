@@ -34,12 +34,22 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          
-          
+                  
   job2: 
-
      runs-on: windows-latest
+     needs: job1
  
+     steps:
+       - name: Checkout do repositório
+         uses: actions/checkout@v2
+       - name: Hello Windows world!
+         run: echo Hello Windows world!
+              echo Bem Vindo!
+  job3: 
+     runs-on: windows-latest
+     needs: 
+         - job1
+         - job2
      steps:
        - name: Checkout do repositório
          uses: actions/checkout@v2
