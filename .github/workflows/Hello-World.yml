@@ -53,6 +53,4 @@ jobs:
      steps:
        - name: Checkout do repositório
          uses: actions/checkout@v2
-       - name: Hello Windows world!
-         run: echo Hello Windows world!
-              echo Bem Vindo!
+       
