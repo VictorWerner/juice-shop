@@ -41,8 +41,8 @@ jobs:
      runs-on: windows-latest
  
      steps:
-     - name: Checkout do repositório
-     - uses: actions/checkout@v2
-     - name: Hello Windows world!
-     - run: echo Hello Windows world!
-            echo Bem Vindo!
+       - name: Checkout do repositório
+         uses: actions/checkout@v2
+       - name: Hello Windows world!
+         run: echo Hello Windows world!
+              echo Bem Vindo!
